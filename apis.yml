@@ -1,8 +1,28 @@
 aid: iqiyi
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/iqiyi.png
 name: iQIYI
-description: 'iQIYI is a company surfaced as a portfolio company of hongshan and added to the API Evangelist
-  network as a stub for enrichment. Sector: technology. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: >-
+  iQIYI is one of China's largest online video streaming and entertainment platforms,
+  delivering movies, TV dramas, variety shows, animation, documentaries, and original
+  content across web, mobile (Android/iOS), and OTT/smart-TV devices. Beyond its
+  consumer service, iQIYI runs a SaaS / OTT developer platform that lets partners
+  launch their own branded streaming service with a RESTful API covering Video,
+  Channel, Album, Search, and Player resources, plus AVOD/SVOD/TVOD monetization,
+  analytics, audience management, and DRM. iQIYI also operates the QIYU XR developer
+  platform for VR/AR device applications and maintains an active open-source GitHub
+  organization. This profile entered the API Evangelist network as a portfolio lead
+  of Hongshan and has been enriched from iQIYI's public developer surface.
 url: https://raw.githubusercontent.com/api-evangelist/iqiyi/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,11 +32,36 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Technology
-apis: []
+- Video
+- Streaming
+- Media
+- Entertainment
+- OTT
+- SaaS
+apis:
+- name: iQIYI SaaS OTT Developer API
+  description: >-
+    RESTful API for the iQIYI SaaS / OTT platform, covering Video, Channel, Category,
+    Album, Search, and Player resources, with an Authentication section and a
+    getting-started tutorial. Used by partners building branded streaming experiences
+    on iQIYI SaaS.
+  humanURL: https://saas.iqiyi.com/kszt/Developer_Documentation.html
+  baseURL: https://saas.iqiyi.com
+  tags:
+  - Video
+  - Streaming
+  - OTT
+  properties:
+  - type: Documentation
+    url: https://saas.iqiyi.com/kszt/Developer_Documentation.html
+  - type: APIReference
+    url: https://saas.iqiyi.com/kszt/api_reference.html
+  - type: GettingStarted
+    url: https://saas.iqiyi.com/kszt/getStarted.html
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
@@ -25,3 +70,24 @@ maintainers:
 common:
 - type: Website
   url: https://iqiyi.com
+- type: DeveloperPortal
+  url: https://saas.iqiyi.com/
+- type: Documentation
+  url: https://saas.iqiyi.com/kszt/Developer_Documentation.html
+- type: APIReference
+  url: https://saas.iqiyi.com/kszt/api_reference.html
+- type: GettingStarted
+  url: https://saas.iqiyi.com/kszt/getStarted.html
+- type: Support
+  url: mailto:SaaS_Service@qiyi.com
+- type: GitHubOrganization
+  url: https://github.com/iqiyi
+- type: DomainSecurity
+  url: security/iqiyi-domain-security.yml
+- type: LLMsTxt
+  url: llms/iqiyi-llms.txt
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

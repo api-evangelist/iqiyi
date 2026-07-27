@@ -1,0 +1,28 @@
+generated: '2026-07-19'
+method: searched
+source: live probes of iQIYI public hosts
+note: >-
+  No /.well-known/ discovery documents or /llms.txt were served (all 404). Recorded
+  as negative results for auditability; no WellKnown/SecurityTxt pointer is wired
+  because nothing returned 200.
+hosts:
+- host: https://www.iqiyi.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /llms.txt
+    status: 404
+- host: https://saas.iqiyi.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /llms.txt
+    status: 404
